@@ -1,31 +1,79 @@
 module.exports = `
-.sans-serif {
-  font-family: -apple-system, BlinkMacSystemFont,
-               'avenir next', avenir,
-               'helvetica neue', helvetica,
-               ubuntu,
-               roboto, noto,
-               'segoe ui', arial,
-               sans-serif;
+@font-face {
+  font-family: 'Fabriga';
+  src: url('//io.vtex.com.br/fonts/fabriga/Fabriga-Light.eot');
+  src: url('//io.vtex.com.br/fonts/fabriga/Fabriga-Light.eot?#iefix') format('embedded-opentype'),
+    url('//io.vtex.com.br/fonts/fabriga/Fabriga-Light.woff2') format('woff2'),
+    url('//io.vtex.com.br/fonts/fabriga/Fabriga-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
-.serif {
-  font-family: georgia,
-               times,
-               serif;
+@font-face {
+  font-family: 'Fabriga';
+  src: url('//io.vtex.com.br/fonts/fabriga/Fabriga-Regular.eot');
+  src: url('//io.vtex.com.br/fonts/fabriga/Fabriga-Regular?#iefix') format('embedded-opentype'),
+    url('//io.vtex.com.br/fonts/fabriga/Fabriga-Regular.woff2') format('woff2'),
+    url('//io.vtex.com.br/fonts/fabriga/Fabriga-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.system-sans-serif {
-  font-family: sans-serif;
+@font-face {
+  font-family: 'Fabriga';
+  src: url('//io.vtex.com.br/fonts/fabriga/Fabriga-Italic.eot');
+  src: url('//io.vtex.com.br/fonts/fabriga/Fabriga-Italic?#iefix') format('embedded-opentype'),
+    url('//io.vtex.com.br/fonts/fabriga/Fabriga-Italic.woff2') format('woff2'),
+    url('//io.vtex.com.br/fonts/fabriga/Fabriga-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
 }
 
-.system-serif {
-  font-family: serif;
+@font-face {
+  font-family: 'Fabriga';
+  src: url('//io.vtex.com.br/fonts/fabriga/Fabriga-Medium.eot');
+  src: url('//io.vtex.com.br/fonts/fabriga/Fabriga-Medium?#iefix') format('embedded-opentype'),
+    url('//io.vtex.com.br/fonts/fabriga/Fabriga-Medium.woff2') format('woff2'),
+    url('//io.vtex.com.br/fonts/fabriga/Fabriga-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'Fabriga';
+  src: url('//io.vtex.com.br/fonts/fabriga/Fabriga-Bold.eot');
+  src: url('//io.vtex.com.br/fonts/fabriga/Fabriga-Bold?#iefix') format('embedded-opentype'),
+    url('//io.vtex.com.br/fonts/fabriga/Fabriga-Bold.woff2') format('woff2'),
+    url('//io.vtex.com.br/fonts/fabriga/Fabriga-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Fabriga';
+  src: url('//io.vtex.com.br/fonts/fabriga/Fabriga-Black.eot');
+  src: url('//io.vtex.com.br/fonts/fabriga/Fabriga-Black?#iefix') format('embedded-opentype'),
+    url('//io.vtex.com.br/fonts/fabriga/Fabriga-Black.woff2') format('woff2'),
+    url('//io.vtex.com.br/fonts/fabriga/Fabriga-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
 
-
+body, button, input, optgroup, select, textarea {
+  font-family: 'Fabriga',
+  -apple-system,
+  BlinkMacSystemFont,
+  avenir next,
+  avenir,
+  helvetica neue,
+  helvetica,
+  ubuntu,
+  roboto,
+  noto,
+  segoe ui,
+  arial,
+  sans-serif;
+}
 
 code, .code {
   font-family: Consolas,
@@ -33,61 +81,4 @@ code, .code {
                monospace;
 }
 
-.courier {
-  font-family: 'Courier Next',
-               courier,
-               monospace;
-}
-
-
-
-
-.helvetica {
-  font-family: 'helvetica neue', helvetica,
-               sans-serif;
-}
-
-.avenir {
-  font-family: 'avenir next', avenir,
-               sans-serif;
-}
-
-
-
-
-.athelas {
-  font-family: athelas,
-               georgia,
-               serif;
-}
-
-.georgia {
-  font-family: georgia,
-               serif;
-}
-
-.times {
-  font-family: times,
-               serif;
-}
-
-.bodoni {
-  font-family: "Bodoni MT",
-                serif;
-}
-
-.calisto {
-  font-family: "Calisto MT",
-                serif;
-}
-
-.garamond {
-  font-family: garamond,
-               serif;
-}
-
-.baskerville {
-  font-family: baskerville,
-               serif;
-}
 `
