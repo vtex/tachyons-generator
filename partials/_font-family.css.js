@@ -60,6 +60,7 @@ module.exports = `
 }
 
 body, button, input, optgroup, select, textarea {
+  -webkit-font-smoothing: antialiased;
   font-family: 'Fabriga',
   -apple-system,
   BlinkMacSystemFont,
