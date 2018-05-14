@@ -23,7 +23,7 @@ curl -X POST \
      https://tachyons.pub
 ```
 
-or post the config.json file 
+or post the config.json file
 
 ```sh
 curl -X POST \
@@ -146,6 +146,17 @@ Will generate the following CSS:
 
 ```css
 .my-namespace .bg-black { background-color: #000; }
+```
+
+
+#### `skipModules`
+
+You can also omit the partials you don't need with the key `skipModules`, for example if you don't want normalize.css in the bundle you can do:
+
+```js
+{
+  "skipModules": ["normalize"]
+}
 ```
 
 #### Example npm commands
