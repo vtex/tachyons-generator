@@ -44,11 +44,17 @@ const config = require('./config.json')
 const generate = async () => {
   const tachy = tachyonsGenerator(config)
 
-  const out = await tachy.generate()
-  
-  fs.writeFileSync('index.html', out.docs)
-  fs.writeFileSync('tachyons.css', out.css)
-  fs.writeFileSync('tachyons.min.css', out.min)
+  // Minify CSS
+  const out1 = await tachy.generate({ minify: true })
+  fs.writeFileSync('tachyons.min.css', out1.css)
+
+  // Keep colors as CSS variables
+  const out2 = await tachy.generate({ compileVars: false })
+  fs.writeFileSync('tachyons-with-vars.css', out2.css)
+
+  // Generate docs website
+  const docs = await tachy.docs()
+  fs.writeFileSync('index.html', docs)
 }
 
 generate()
@@ -121,6 +127,25 @@ generate()
   },
   "opacity": [1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1, 0.05, 0.025, 0]
 }
+```
+
+
+#### Other configs
+
+#### `namespace`
+
+You can pass a `namespace` property to namespace the CSS generated (including the normalize module).
+
+Example:
+
+```json
+ "namespace": "my-namespace",
+```
+
+Will generate the following CSS:
+
+```css
+.my-namespace .bg-black { background-color: #000; }
 ```
 
 #### Example npm commands
