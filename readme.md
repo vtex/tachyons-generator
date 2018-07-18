@@ -46,11 +46,11 @@ const generate = async () => {
 
   // Minify CSS
   const out1 = await tachy.generate({ minify: true })
-  fs.writeFileSync('tachyons.min.css', out1.css)
+  fs.writeFileSync('tachyons.min.css', out1)
 
   // Keep colors as CSS variables
   const out2 = await tachy.generate({ compileVars: false })
-  fs.writeFileSync('tachyons-with-vars.css', out2.css)
+  fs.writeFileSync('tachyons-with-vars.css', out2)
 
   // Generate docs website
   const docs = await tachy.docs()
