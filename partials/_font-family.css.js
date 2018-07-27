@@ -59,11 +59,26 @@ module.exports = `
   font-style: normal;
 }
 
-body, button, input, optgroup, select, textarea {
+body, button, input, optgroup, select, textarea, .fabriga {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Fabriga',
   -apple-system,
+  BlinkMacSystemFont,
+  avenir next,
+  avenir,
+  helvetica neue,
+  helvetica,
+  ubuntu,
+  roboto,
+  noto,
+  segoe ui,
+  arial,
+  sans-serif;
+}
+
+.sans-serif {
+  font-family: -apple-system,
   BlinkMacSystemFont,
   avenir next,
   avenir,
