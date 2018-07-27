@@ -65,7 +65,6 @@ module.exports = `/* TACHYONS (customized) | https://github.com/tachyons-css/tac
 @import './_skins-pseudo';
 @import './_spacing';
 @import './_negative-margins';
-@import './_tables';
 @import './_text-decoration';
 @import './_text-align';
 @import './_text-transform';
