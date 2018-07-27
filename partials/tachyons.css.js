@@ -24,7 +24,6 @@ module.exports = `/* TACHYONS (customized) | https://github.com/tachyons-css/tac
  */
 
 
-/* External Library Includes */
 @import './_normalize';
 
 
@@ -66,7 +65,6 @@ module.exports = `/* TACHYONS (customized) | https://github.com/tachyons-css/tac
 @import './_skins-pseudo';
 @import './_spacing';
 @import './_negative-margins';
-@import './_tables';
 @import './_text-decoration';
 @import './_text-align';
 @import './_text-transform';
@@ -82,7 +80,6 @@ module.exports = `/* TACHYONS (customized) | https://github.com/tachyons-css/tac
 
 /* Variables */
 /* Importing here will allow you to override any variables in the modules */
-@import './_colors';
 @import './_media-queries';
 
 /* Debugging */

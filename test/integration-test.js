@@ -9,33 +9,21 @@ import tachyonsGenerator from '../'
 
 test('media-queries are handled correctly', async t => {
   const tachy = tachyonsGenerator(config)
-  const {
-    modules: {
-      display
-    }
-  } = await tachy.generate()
+  const { display } = await tachy.modules()
 
   t.snapshot(display)
 })
 
 test('type-scale', async t => {
   const tachy = tachyonsGenerator(config)
-  const {
-    modules: {
-      typeScale
-    }
-  } = await tachy.generate()
+  const { typeScale } = await tachy.modules()
 
   t.snapshot(typeScale)
 })
 
 test('module skipping', async t => {
   const tachy = tachyonsGenerator({ skipModules: ['aspect-ratios'] })
-  const {
-    modules: {
-      aspectRatios
-    }
-  } = await tachy.generate()
+  const { aspectRatios } = await tachy.modules()
 
   t.is(aspectRatios, undefined)
 })
@@ -43,7 +31,8 @@ test('module skipping', async t => {
 test('css', async t => {
   const tachy = tachyonsGenerator(config)
 
-  const { css, docs } = await tachy.generate()
+  const css = await tachy.generate()
+  const docs = await tachy.docs()
 
   fs.writeFileSync('out.css', css)
   fs.writeFileSync('out.html', docs)
