@@ -1,7 +1,7 @@
 'use strict'
 
 const camelcase = require('camelcase')
-const buildCss = require('./build/index.js')
+const buildCss = require('./lib/build.js')
 const DEFAULT_CONFIG = require('./config')
 
 const generateDocs = require('./docs')
