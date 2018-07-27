@@ -37,11 +37,7 @@ test('handle greater than queries', async t => {
     ]
   })
 
-  const {
-    modules: {
-      borderWidths
-    }
-  } = await tachy.generate()
+  const { borderWidths } = await tachy.modules()
 
   t.snapshot(borderWidths)
 })

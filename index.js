@@ -17,6 +17,12 @@ module.exports = config => {
   const _config = Object.assign({}, DEFAULT_CONFIG, config)
   const mediaQueries = _config.customMedia
 
+  generator.modules = async (options) => {
+    const modules = await generate(_config, mediaQueries)
+
+    return modules
+  }
+
   generator.generate = async (options) => {
     options = Object.assign({}, DEFAULT_OPTIONS, options)
 

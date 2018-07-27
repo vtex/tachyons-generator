@@ -7,7 +7,7 @@ import tachyonsGenerator from '../'
 
 test('nested links colors fall back to default values when not defined', async t => {
   const tachy = tachyonsGenerator()
-  const { modules: { nested } } = await tachy.generate()
+  const { nested } = await tachy.modules()
 
   t.snapshot(nested)
 })
@@ -18,7 +18,7 @@ test('nested links colors are generated when defined', async t => {
       links: ['blue', 'lightest-blue'],
     },
   })
-  const { modules: { nested } } = await tachy.generate()
+  const { nested } = await tachy.modules()
 
   t.snapshot(nested)
 })
