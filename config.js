@@ -126,6 +126,8 @@ module.exports = {
       "muted-5": "#f2f4f5"
     },
     "text": {
+      "action-primary": "#134cd8",
+      "action-secondary": "#eef3f7",
       "link": "#134cd8",
       "emphasis": "#f71963",
       "disabled": "#979899",
@@ -145,6 +147,8 @@ module.exports = {
       "link": "#0c389f",
     },
     "hover-text": {
+      "action-primary": "#0c389f",
+      "action-secondary": "#dbe9fd",
       "link": "#0c389f",
       "emphasis": "#dd1659",
       "success": "#8bc34a",
@@ -187,7 +191,7 @@ module.exports = {
       "emphasis": "#dd1659",
       "success": "#8bc34a",
       "success--faded": "#eafce3",
-      "danger": "#ff4c4c",
+      "danger": "#e13232",
       "danger--faded": "#ffe6e6",
       "warning": "#ffb100",
       "warning--faded": "#fff6e0",
