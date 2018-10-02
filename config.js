@@ -2,24 +2,56 @@ module.exports = {
   "typeScale": [
     3, 2.25, 1.5, 1.25, 1, 0.875, 0.75
   ],
-  "lineHeight": [1, 1.25, 1.5],
-  "spacing": [2, 4, 6, 8, 10, 12, 14],
+  "spacing": [0.125, 0.25, 0.5, 0.75, 1, 1.5, 2, 3, 4, 8, 16],
   "customMedia": [
-    { "m": 48 },
-    { "l": 64 }
+    { "s": 20 },
+    { "ns": {
+        "value": 40,
+        "minWidth": true
+      }
+    },
+    { "m": {
+        "value": 40,
+        "minWidth": true
+      }
+    },
+    { "l": {
+      "value": 64,
+      "minWidth": true
+    }
+    },
+    { "xl": {
+        "value": 80,
+        "minWidth": true
+      }
+    }
   ],
   "colors": {
-    "black": "#000",
-    "near-black": "#111",
-    "dark-gray": "#333",
-    "mid-gray": "#555",
-    "gray": "#777",
-    "silver": "#999",
-    "light-silver": "#aaa",
-    "moon-gray": "#ccc",
-    "light-gray": "#eee",
-    "near-white": "#f4f4f4",
-    "white": "#fff",
+    "rebel-pink": "#F71963",   //DEPRECATE
+    "heavy-rebel-pink": "#DD1659", //DEPRECATE
+    "elite-purple": "#8914CC", //DEPRECATE
+    "near-black": "#3F3F40", //DEPRECATE
+    "dark-gray": "#585959", //DEPRECATE
+    "mid-gray": "#727273", //DEPRECATE
+    "gray": "#979899", //DEPRECATE
+    "silver": "#CACBCC", //DEPRECATE
+    "light-gray": "#E3E4E6", //DEPRECATE
+    "light-silver": "#F2F4F5", //DEPRECATE
+    "near-white": "#F7F9FA", //DEPRECATE
+    "white": "#FFFFFF", //DEPRECATE
+    "washed-blue": "#EDF4FA", //DEPRECATE
+    "light-blue": "#cce8ff", //DEPRECATE
+    "blue": "#368DF7", //DEPRECATE
+    "heavy-blue": "#2A6DBF", //DEPRECATE
+    "light-marine": "#3D5980",   //DEPRECATE
+    "marine": "#25354D",   //DEPRECATE
+    "serious-black": "#142032", //DEPRECATE
+    "green": "#8BC34A", //DEPRECATE
+    "washed-green": "#EAFCE3", //DEPRECATE
+    "red": "#FF4C4C", //DEPRECATE
+    "washed-red": "#FFE6E6", //DEPRECATE
+    "yellow": "#FFB100", //DEPRECATE
+    "washed-yellow": "#FFF6E0", //DEPRECATE
 
     "black-90": "rgba(0,0,0,.9)",
     "black-80": "rgba(0,0,0,.8)",
@@ -45,33 +77,7 @@ module.exports = {
     "white-10": "rgba(255,255,255,.1)",
     "white-05": "rgba(255,255,255,.05)",
     "white-025": "rgba(255,255,255,.025)",
-    "white-0125": "rgba(255,255,255,.0125)",
-
-    "dark-red": "#f00008",
-    "red": "#ff3223",
-    "light-red": "#ffd3c0",
-    "orange": "#f3a801",
-    "gold": "#f2c800",
-    "yellow": "#ffde37",
-    "light-yellow": "#f3dd70",
-    "purple": "#7d5da9",
-    "light-purple": "#8d4f92",
-    "dark-pink": "#c64774",
-    "hot-pink": "#d62288",
-    "pink": "#f49cc8",
-    "light-pink": "#efa4b8",
-    "dark-green": "#006C71",
-    "green": "#41D69F",
-    "light-green": "#9eebcf",
-    "navy": "#001b44",
-    "dark-blue": "#00449e",
-    "blue": "#357edd",
-    "light-blue": "#96ccff",
-    "lightest-blue": "#cdecff",
-    "washed-blue": "#f6fffe",
-    "washed-green": "#e8fdf5",
-    "washed-yellow": "#fff8d5",
-    "washed-red": "#ffdfdf",
+    "white-0125": "rgba(255,255,255,.0125)"
   },
   "semanticColors": {
     "background": {
@@ -259,20 +265,13 @@ module.exports = {
       "warning--faded": "#1a1a1a"
     },
   },
-  "nested": {
-    "links": ["blue", "light-blue"]
-  },
-  "borderWidths": [0, .125, .25, .5, 1, 2],
-  "borderRadius": [0, .125, .25, .5, 1],
+  "borderWidths": [0, 0.125, 0.25, 0.5, 1, 2],
+  "borderRadius": [0, 0.125, 0.25, 0.5, 1],
   "widths": [1, 2, 4, 8, 16],
   "maxWidths": [1, 2, 4, 8, 16, 32, 48, 64, 96],
   "heights": [1, 2, 4, 8, 16],
-  "tables": {
-    "striped": ["light-silver", "moon-gray", "light-gray", "near-white"],
-    "stripe": ["light", "dark"]
-  },
   "typography":{
     "measure": [30, 34, 20]
   },
-  "opacity": [1, .9, .8, .7, .6, .5, .4, .3, .2, .1, .05, .025, 0]
+  "opacity": [1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1, 0.05, 0.025, 0]
 }
