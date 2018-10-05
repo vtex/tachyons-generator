@@ -1,4 +1,6 @@
 node_modules
 out.css
 out.html
+build.js
 *.swp
+package-lock.json
