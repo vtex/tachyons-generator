@@ -1,7 +1,7 @@
 {
   "name": "@vtex/tachyons-generator",
   "description": "Generate a custom VTEX Tachyons build with a json configuration",
-  "version": "0.25.0",
+  "version": "0.25.1",
   "main": "index.js",
   "files": [
     "index.js",
