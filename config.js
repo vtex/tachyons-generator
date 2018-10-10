@@ -316,7 +316,7 @@ module.exports = {
         "textTransform": "initial",
         "letterSpacing": "0"
       },
-      "paragraph": {
+      "body": {
         "fontFamily": "Fabriga, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
         "fontWeight": "normal",
         "fontSize": "16px",
