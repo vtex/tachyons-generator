@@ -267,11 +267,11 @@ module.exports = {
   "widths": [1, 2, 4, 8, 16],
   "maxWidths": [1, 2, 4, 8, 16, 32, 48, 64, 96],
   "heights": [1, 2, 4, 8, 16],
-  "sizes": {
-    "small": 2,
-    "regular": 2.5,
-    "large": 3,
-  },
+  "sizes": [
+    {name: "small", value: 2},
+    {name: "regular", value: 2.5},
+    {name: "large", value: 3},
+  ],
   "tables": {
     "striped": ["light-silver", "moon-gray", "light-gray", "near-white"],
     "stripe": ["light", "dark"]
