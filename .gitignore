@@ -1,5 +1,6 @@
 node_modules
 out.css
+vars.css
 out.html
 build.js
 *.swp
