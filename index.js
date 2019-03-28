@@ -6,6 +6,7 @@ const DEFAULT_CONFIG = require('./config')
 
 const generateDocs = require('./docs')
 const generate = require('./lib/generate')
+const variables = require('./lib/variables')
 const assembleCss = require('./lib/assemble-css')
 
 const DEFAULT_OPTIONS = {
@@ -45,6 +46,12 @@ module.exports = config => {
     const docs = generateDocs(_config, { modules, min: css.css })
 
     return docs
+  }
+
+  generator.variables = async () => {
+    const cssVariables = await variables(config)
+
+    return cssVariables
   }
 
   function generator () {}
