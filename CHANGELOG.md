@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Create bg-overlay token.
+
 ## [1.1.0] - 2019-03-13
 ### Added
 - Add sticky position token.
