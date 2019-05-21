@@ -26,11 +26,20 @@ module.exports = config => {
   generator.generate = async (options) => {
     options = Object.assign({}, DEFAULT_OPTIONS, options)
 
+    let start = process.hrtime()
     const modules = await generate(_config, mediaQueries)
+    let end = process.hrtime(start)
+    console.info('GENERATE TIME: %ds %dms', end[0], end[1] / 1000000)
 
+    start = process.hrtime()
     const post = await assembleCss(modules, _config)
+    end = process.hrtime(start)
+    console.info('ASSEMBLE TIME: %ds %dms', end[0], end[1] / 1000000)
 
+    start = process.hrtime()
     const css = await buildCss(post, options)
+    end = process.hrtime(start)
+    console.info('BUILD TIME: %ds %dms', end[0], end[1] / 1000000)
 
     return css.css
   }
