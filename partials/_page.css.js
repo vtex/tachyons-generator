@@ -21,7 +21,7 @@ const widows = Array.from({ length: 5 })
   .join('\n')
 
 const decorationBreaks = ['slice', 'clone'].map(
-  type => `.decoration-break-${type}: { box-decoration-break: ${type}; }`,
+  type => `.decoration-break-${type} { box-decoration-break: ${type}; }`,
 )
 
 module.exports = [pageBreaks,orphans,widows,decorationBreaks].join('\n\n')
