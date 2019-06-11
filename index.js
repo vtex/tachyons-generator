@@ -36,7 +36,7 @@ module.exports = config => {
     return css.css
   }
 
-  generator.generatePrint = async ({ key, ...options } = {}) => {
+  generator.generatePrint = async ({ key = 'print', ...options } = {}) => {
     const generatedCss = await generatePrint(_config, key)
     const { css } = await buildCss(generatedCss, options)
     return css

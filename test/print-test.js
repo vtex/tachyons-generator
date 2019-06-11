@@ -3,7 +3,7 @@ import tachyonsGenerator from '../'
 
 test('should generate a print stylesheet', async t => {
   const tachy = tachyonsGenerator()
-  const printStylesheet = await tachy.generatePrint({ key: 'print' })
+  const printStylesheet = await tachy.generatePrint()
   t.snapshot(printStylesheet)
 })
 

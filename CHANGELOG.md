@@ -7,9 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fix
+
+- Default print class identifier to `print`.
+
 ## [1.2.0] - 2019-06-11
 
-## Added
+### Added
 
 - Add `generatePrint()` to generate a stylesheet to modify printing page styles.
 
