@@ -6,6 +6,7 @@ const DEFAULT_CONFIG = require('./config')
 
 const generateDocs = require('./docs')
 const generate = require('./lib/generate')
+const generatePrint = require('./lib/generatePrint')
 const assembleCss = require('./lib/assemble-css')
 
 const DEFAULT_OPTIONS = {
@@ -33,6 +34,12 @@ module.exports = config => {
     const css = await buildCss(post, options)
 
     return css.css
+  }
+
+  generator.generatePrint = async ({ key, ...options } = {}) => {
+    const generatedCss = await generatePrint(_config, key)
+    const { css } = await buildCss(generatedCss, options)
+    return css
   }
 
   generator.docs = async () => {
