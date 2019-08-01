@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Remove all comments when minifying.
+- Remove all comments when minifying, as an attempt of fixing an issue with MIME type of CSS files (https://stackoverflow.com/questions/48248832/stylesheet-not-loaded-because-of-mime-type/48270432#48270432).
 
 ## [1.2.1] - 2019-06-11
 
