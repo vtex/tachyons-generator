@@ -94,7 +94,5 @@ module.exports = config => {
     }))
     return allCss
   }
-
-  function generator() { }
   return generator
 }
