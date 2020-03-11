@@ -47,7 +47,7 @@
     "postcss-nested": "^3.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "strip-css-comments": "^4.1.0",
+    "strip-css-comments": "^3.0.0",
     "strip-css-media-queries": "^1.0.0"
   },
   "devDependencies": {
