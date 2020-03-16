@@ -1,14 +1,9 @@
 'use strict'
 
-// const { parse: mqifyParse } = require('mqify')
-// const classPostfix = require('postcss-class-postfix')
-// const postcss = require('postcss')
-
 const DEFAULT_CONFIG = require('./config')
 const generateDocs = require('./docs')
 
 const buildCss = require('./lib/build.js')
-// const generators = require('./lib/generators')
 const generate = require('./lib/generate')
 const generatePrint = require('./lib/generatePrint')
 const assembleCss = require('./lib/assemble-css')
