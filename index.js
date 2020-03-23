@@ -32,7 +32,7 @@ module.exports = config => {
 
     const { mediaQueryString, modulesWithTokens } = addSizeTokens ? getModulesWithTokens(options.stylesheetType, modules, mediaQueries) : {}
     options._insertMedia = mediaQueryString
-    const post = await assembleCss(modulesWithTokens || modules, _config)    
+    const post = await assembleCss(modulesWithTokens || modules, _config)
     const css = await buildCss(post, options)
 
     return css.css
