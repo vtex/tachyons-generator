@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.0] - 2020-03-23
+### Added
+- Create `stylesheetType` options to `generate` function, allowing to generate stylesheets for known devices types. For now they are: `large`, `small`, `notsmall` and `xlarge`. `common` is also accepted to generate stylesheet with no media queries and size suuffixes on tokens.
+
 ## [1.3.0] - 2019-08-01
 
 ### Changed

@@ -1,13 +1,13 @@
 'use strict'
 
-const camelcase = require('camelcase')
-const buildCss = require('./lib/build.js')
 const DEFAULT_CONFIG = require('./config')
-
 const generateDocs = require('./docs')
+
+const buildCss = require('./lib/build.js')
 const generate = require('./lib/generate')
 const generatePrint = require('./lib/generatePrint')
 const assembleCss = require('./lib/assemble-css')
+const getModulesWithTokens = require('./lib/styleSizeTypes')
 
 const DEFAULT_OPTIONS = {
   compileVars: true,
@@ -27,10 +27,12 @@ module.exports = config => {
   generator.generate = async (options) => {
     options = Object.assign({}, DEFAULT_OPTIONS, options)
 
-    const modules = await generate(_config, mediaQueries)
+    const addSizeTokens = options && options.stylesheetType && options.stylesheetType !== 'common'
+    const modules = await generate(_config, mediaQueries, !!options.stylesheetType)
 
-    const post = await assembleCss(modules, _config)
-
+    const { mediaQueryString, modulesWithTokens } = addSizeTokens ? getModulesWithTokens(options.stylesheetType, modules, mediaQueries) : {}
+    options._insertMedia = mediaQueryString
+    const post = await assembleCss(modulesWithTokens || modules, _config)    
     const css = await buildCss(post, options)
 
     return css.css

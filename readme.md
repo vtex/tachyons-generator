@@ -30,6 +30,10 @@ const generate = async () => {
   const out2 = await tachy.generate({ compileVars: false })
   fs.writeFileSync('tachyons-with-vars.css', out2)
 
+  // Create stylesheet for devices of type "large" only
+  const out3 = await tachy.generate({ stylesheetType: 'large' })
+  fs.writeFileSync('tachyons-large.css', out3)
+
   // Generate docs website
   const docs = await tachy.docs()
   fs.writeFileSync('index.html', docs)
