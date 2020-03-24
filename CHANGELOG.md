@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.1] - 2020-03-24
+### Fixed
+- Read from manifest what tokens should be added to stylesheets generated with `types`.
+
 ## [1.5.0] - 2020-03-23
 ### Added
 - `outlineColor` token that defines a global outline color. via the wildcard `*` selector.
