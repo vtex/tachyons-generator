@@ -35,7 +35,7 @@
     "mqify": "^0.1.1",
     "palx": "^1.0.2",
     "perfectionist": "^2.4.0",
-    "postcss": "^6.0.22",
+    "postcss": "^7.0.36",
     "postcss-class-postfix": "^1.0.0",
     "postcss-class-prefix": "^0.3.0",
     "postcss-conditionals": "^2.1.0",
